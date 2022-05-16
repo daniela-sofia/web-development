@@ -1,0 +1,453 @@
+:root {
+    /*from darkest to lightest*/
+    --one: #4C0027;
+    --two: #570530;
+    --three: #750550;
+    --four: #980F5A;
+    --light: #F1DBD5;
+}
+
+html {
+    font-size: 55%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #F1DBD5;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+@font-face {
+    font-family: SaolDisplay;
+    src: url("../fonts/SaolDisplay-Regular.ttf");
+}
+
+
+h1, h2, h3 {
+    font-family: SaolDisplay;
+    font-size: 7.5rem;
+    padding: 0; 
+}
+
+h2 {
+    font-size: 5.5rem;
+    text-align: center;
+    margin: 4rem auto;
+}
+
+h3 {
+   font-size: 3rem;
+   font-weight: bold;
+   font-style: italic;
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
+font-weight: bold;
+}
+
+p, a, ul, figcaption {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+}
+
+figcaption {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+
+.navbar-nav {
+    
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.nav-link {
+    font-family: SaolDisplay;
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+}
+
+#Home, #Bio, #Works, #More {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#Home, #summary, #Works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Home p, #Home h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#Home {
+    gap: 5rem;
+}
+
+#description {
+    margin-top: 1rem;
+    border-top: #000 solid 2px;
+    padding-top: 0.5rem;
+}
+
+#description p, .achivement p {
+    font-family: "SaolDisplay", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.link {
+    color: #000;
+    text-decoration: underline;
+    transition-property: font-size;
+    transition-duration: 2s;
+}
+
+
+.link:hover{
+    color: #000;
+  font-size: 2rem;
+}
+
+
+.parallax {
+  background: url("images/stingray.jpg");
+  /* Set a specific height */
+  height: 270px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax img {
+  height: 400px;
+  -webkit-box-shadow: 5px 5px 15px -4px #8F8F8F, -10px -10px 15px -4px #8F8F8F; 
+  box-shadow: 5px 5px 15px 5px #8F8F8F, -13px -13px 15px -4px #8F8F8F;
+}
+
+@media (max-width: 880px){
+    .parallax img {
+        display: none;
+    }
+
+    #summary figure {
+        display: none;
+    }
+}
+
+.achivement {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    width: 100%;
+}
+
+.achivement ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.achivement .quote {
+    width: 65%;
+    align-self: flex-end;
+    border-left: #000 solid 2px;
+    padding-left: 1rem;
+}
+
+#non-fic, #fic, #screenplay {
+    display: flex;
+    flex-direction: column;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.book {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.book img {
+    max-height: 180px;
+}
+
+.synopsis {
+    text-align: justify;
+}
+
+#More h3 {
+    font-size: 1.8rem;
+}
+
+#More a {
+    font-family: "SaolDisplay", sans-serif;
+    font-size: inherit;
+    color: inherit;
+}
+
+footer {
+    margin-bottom: 2rem;
+}
+
+footer .row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 1rem; 
+    padding-right: 1rem;
+}
+
+span {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+}
+
+#credits {
+    font-size: 1rem;
+    width: 30%;
+}
+
+.credit a {
+    font-size: 1rem;
+    color: black
+}
+
+#social, #policy {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+#social span {
+    text-align: center;
+}
+
+#policy span {
+    text-align: right;
+}
+
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-links a {
+    font-size: 2.5rem;
+    color: black;
+    transition-property: color;
+    transition-duration: 2s;
+}
+
+footer a:hover, 
+footer a:active {
+    cursor: pointer;
+    color: grey;
+}
+
+@media (min-width: 600px) {
+    #Home {
+        gap: 3rem;
+    }
+
+    #hero {
+        display: flex;
+        gap: 8rem;
+    }
+
+    #hero-img{
+        order: 1;
+    }
+
+    #title {
+        order: 2;
+        align-self: center;
+    }
+
+    #title h1 {
+        font-size: 10rem;
+    }
+    
+    .parallax {
+        height: 500px;
+    }
+
+    #non-fic, #fic, #screenplay {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    #Works p {
+        font-size: 1.5rem;
+    }
+
+    .book img {
+        max-height: 160px; 
+    }
+
+    
+   
+}
+
+@media (max-width: 1000px) {
+    #bio-img {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+     #Bio, #Works {
+        margin-top: 12rem;
+        margin-bottom: 12rem;
+    }
+
+    #Home {
+        gap: 1rem;
+    }
+
+    #hero {
+        width: 80%;
+        gap: 13rem;
+    }
+    
+    #Bio {
+        height: 90%;
+    }
+
+    .parallax {
+        display: none;
+    }
+
+    #summary {
+      display: grid;
+      grid-template-columns: 50% 15% 35%;
+      grid-template-rows: repeat(2, 50%);
+      width: 100%;
+      height: 100%;
+    }
+
+    #bio-img {
+      grid-column-start: 1;
+       grid-column-end: 2;
+       grid-row-start: 1;
+      grid-row-end: 3;
+      align-self: center;
+      justify-self: center;
+      
+    }
+
+    #summary h2 {
+      writing-mode: vertical-lr;
+      text-orientation: sideways-right;
+      grid-column-start: 2;
+       grid-column-end: 3;
+       grid-row-start: 1;
+      grid-row-end: 2;
+      font-family: 'Playfair Display', serif;
+      font-size: 5.5rem;
+      justify-self: flex-start;
+    }
+
+    .achivement {
+       grid-column-start: 3;
+       grid-column-end: 4;
+       grid-row-start: 1;
+      grid-row-end: 3;
+      display: flex;
+      flex-direction: column;
+      gap: 2.8rem;
+      align-self: flex-start;
+    }
+
+    .achivement ul {
+      list-style: none;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      padding-left: 0;
+      font-size: 1.9rem;
+      height: 50%;
+      text-align: justify;
+    }
+
+    #quote {
+      font-family: SaolDisplay, sans-serif;
+      font-weight: bold;
+      
+    }
+
+    #quote a, #quote p{
+        font-size: 1.6rem;
+    }
+
+
+    #non-fic, #fic, #screenplay {
+        flex-direction: column;
+    }
+
+    .group {
+        flex-direction: row;
+        gap: 3.5rem;
+    }
+
+    .book {
+        flex-direction: column;
+        align-items: center;
+        width: 33%;
+    }
+
+    .book img {
+        max-height: 190px; 
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .synopsis {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .synopsis p {
+        width: 66%;
+        text-align: justify;
+        font-size: 1.3rem; 
+    }
+
+    .synopsis h4 {
+        text-align: center;
+    }
+
+}

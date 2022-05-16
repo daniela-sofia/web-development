@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=VT323&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3ad9e04b00.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"></link>
+    
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+        
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <i class="fa-solid fa-ellipsis"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#About" class="nav-item nav-link">About</a>
+                <a href="#Projects" class="nav-item nav-link">Projects</a>
+                <a href="#Contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid ">
+    <div id="Hero" class="p-5">
+      <img src="images/HERO-IMG1.png" alt="hero image" class="img-fluid" id="img-fullscreen">
+      <img src="images/hero-img-mobile.png" alt="hero image" class="img-fluid" id="img-mobile">
+    </div>
+
+    <div id="About" class="row p-5">
+      <div id="about-me" class="col-md-5">
+        <div id="about-me-header" class="header">
+          <img class="img-fluid" src="images/about-me.png" alt="about me section header">
+        </div>
+        <img src="images/hello.png" alt="" id="hello">
+        <p>
+          I'm a 25 year old Industrial Engineer, I found my love for programming through some of the courses I saw in university, where I learned C++. <br><br>During the pandemic, as I was waiting to present my thesis, I decided to take the time to dive deeper into programming, so started learning Python and then I decided to learn Web Development. I find it truly fascinating to have the skill to create something out of nothing and that's why I decided to pursue Frontend development. <br><br> I'm constantly in the pursue of new skills in order to bring out the best in every project I work on.
+        </p>
+      </div>
+      
+      <div id="intro" class="col-md-7">
+        <p>LET ME HELP YOU <br>BRING YOUR IDEAS <br> INTO REALITY.</p>
+      </div>
+      
+    </div>
+    <div id="skills" class="p-5">
+      <div id="skills-header">
+        <img src="images/skills1.png" class="img-fluid header justify-content-center" alt="">
+       
+      </div>
+      <div class="box col-md-6">
+        <div class="skill" >
+          <h2>HTML</h2>
+          <div class="stars" >
+            <img src="images/star.png" alt="star" class="img-fluid reveal jump">
+            <img src="images/star.png" alt="star" class="img-fluid reveal jump">
+            <img src="images/star.png" alt="star" class="img-fluid reveal jump">
+            <img src="images/star.png" alt="star" class="img-fluid reveal jump">
+            <img src="images/star.png" alt="star" class="img-fluid reveal jump">
+            </div>
+        </div>
+        <div class="skill">
+          <h2>CSS</h2>
+          <div class="stars">
+            <img src="images/star.png" alt="star" class="img-fluid  reveal jump">
+            <img src="images/star.png" alt="star" class="img-fluid  reveal jump">
+            <img src="images/star.png" alt="star" class="img-fluid  reveal jump">
+            <img src="images/star.png" alt="star" class="img-fluid  reveal jump">
+          </div>  
+        </div>
+        <div class="skill">
+          <h2>Bootstraps</h2>
+          <div class="stars">
+            <img src="images/star.png" alt="star" class="img-fluid  reveal jump">
+            <img src="images/star.png" alt="star" class="img-fluid  reveal jump">
+            <img src="images/star.png" alt="star" class="img-fluid  reveal jump">
+            <img src="images/star.png" alt="star" class="img-fluid  reveal jump">
+          </div>
+        </div>
+      </div> 
+      
+    </div>
+
+    <div id="Projects" class="p-5">
+      <div id="projects-header" class="header">
+        <img src="images/projects.png" alt="projects section header" class="img-fluid">
+      </div>
+      
+      <div id="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/images-full/tribute-mockup.png" class="d-block w-100" alt="tribute page responsive mockup">
+              <div class="carousel-caption d-none d-md-block">
+                <h5><a href="https://codepen.io/danisername/full/gOoZOpz">Tribute Page</a></h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/images-full/survey-mockup.png" class="d-block w-100" alt="survey page responsive mockup">
+              <div class="carousel-caption d-none d-md-block">
+                <h5><a href="https://codepen.io/danisername/full/zYPPJrr">Survey Page</a></h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/images-full/technical-mockup.png" class="d-block w-100" alt="technical documentation page responsive mockup">
+              <div class="carousel-caption d-none d-md-block">
+                <h5><a href="https://codepen.io/danisername/full/wvPdLwQ">Technical Documentation Page</a></h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/images-full/product-mockup.png" class="d-block w-100" alt="product landing page responsive mockup">
+              <div class="carousel-caption d-none d-md-block">
+                <h5><a href="https://codepen.io/danisername/full/GRyeoza">Product Landing Page</a></h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="responsive-projects">
+        <div class="project" id="tribute-res">
+          <h2>Tribute Page</h2>
+          <img src="images/images-full/tribute-mockup.png" class="img-fluid" alt="tribute page responsive mockup">
+          <p id="description">
+            A minimalistic, responsive, elegant website to offer tribute to the late writer Joan Didion. The main goals were to show the different works made by the writer without overcrowding the screen, and second, to make the layout vary noticibly depending on the device that could browse through the page.
+          </p>
+          <a href="https://codepen.io/danisername/full/gOoZOpz">Codepen</a>
+        </div>
+        <div class="project" id="survey-res">
+          <h2>Survey Page</h2>
+          <img src="images/images-full/survey-mockup.png"  class="img-fluid" alt="survey page responsive mockup">
+          <p id="description">
+            A colorful and fun twist to a survey page. I wanted to add an element that made the design more complex and the "favorite genre" section was the result of this challenge. 
+          </p>
+          <a href="https://codepen.io/danisername/full/zYPPJrr">Codepen</a>
+        </div>
+        <div class="project" id="technical-res">
+          <h2>Technical Documentation Page</h2>
+          <img src="images/images-full/technical-mockup.png" class="img-fluid" alt="technical documentation page responsive mockup">
+          <p id="description">
+            Clear information displayed in a simple but pleasing design. Here I decided to modify the default scrollbar to add something extra to the webpage.
+          </p>
+          <a href="https://codepen.io/danisername/full/wvPdLwQ">Codepen</a>
+        </div>
+        <div class="project" id="product-res">
+          <h2>Product Landing Page</h2>
+          <img src="images/images-full/product-mockup.png" class="img-fluid" alt="product landing page responsive mockup">
+          <p id="description">
+            Clear information displayed in a simple but pleasing design. Here I decided to modify the default scrollbar to add something extra to the webpage.
+          </p>
+          <a href="https://codepen.io/danisername/full/wvPdLwQ">Codepen</a>
+        </div>
+      </div>
+      <div class="show-all text-center">
+        <a href="https://codepen.io/danisername" class="btn">Show All</a>
+      </div>
+    </div>
+
+    <div id="Contact" class="p-5">
+      <img src="images/contact.png" alt="contact section header" class="img-fluid header">
+      <p>Interested in working together? <br>
+      Here's where you can find me</p>
+      <img src="images/mobile-phone.png" alt="phone icon" class="img-fluid phone" >
+      <div class="links">
+        <a href="mailto:danielaurbanejag@gmail.com"> Send an E-Mail</a>
+        <a href="https://www.linkedin.com/in/daniela-urbaneja-1146a01b8/" >LinkedIn</a>
+      </div>
+      
+    </div>
+    <hr>
+    <footer class="px-3">
+        <div class="row">
+            <div class="col-md-6" id="credits">
+                <p class="text-light">Credits</p>
+                <ul>
+                  <li>Photo by <a href="https://unsplash.com/@ritambaishya?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ritam Baishya</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></li>
+                  <li><a href="https://www.flaticon.com/free-icons/star" title="star icons">Star icons created by Flat Icons - Flaticon</a></li>
+                  <li><a href="https://www.flaticon.com/free-icons/jealous" title="jealous icons">Jealous icons created by Freepik - Flaticon</a></li>
+                  <li><a href="https://www.flaticon.com/free-icons/sunglasses" title="sunglasses icons">Sunglasses icons created by Freepik - Flaticon</a></li>
+                  <li><a href="https://www.flaticon.com/free-icons/electricity" title="electricity icons">Electricity icons created by Freepik - Flaticon</a></li>
+                  <li><a href="https://www.flaticon.com/free-icons/rainbow" title="rainbow icons">Rainbow icons created by Freepik - Flaticon</a></li>
+                  <li><a href="https://www.flaticon.com/free-icons/electronics" title="electronics icons">Electronics icons created by Freepik - Flaticon</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+    <script>
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+
+      window.addEventListener("scroll", reveal);
+    </script>
+  </div>
+</body>
+</html>

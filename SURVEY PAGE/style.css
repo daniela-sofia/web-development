@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.box1 {
+  background: rgb(215,127,161);
+background: linear-gradient(90deg, rgba(215,127,161,1) 0%, rgba(186,171,218,1) 50%, rgba(214,229,250,1) 88%);
+}
+
+header {
+  padding: 3.5rem 0 2rem 0;
+  text-align: center;
+  color: #FFF9F9;
+}
+
+header h1 {
+  font-family: 'Righteous', monospace;
+  font-size: 5rem;
+  
+}
+
+.box2 {
+  margin: 0 auto;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 0.6rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+}
+
+.form-group {
+  margin: 1.5rem auto;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  
+}
+
+select {
+  margin: 1rem 0;
+  border: 0.1rem solid #CDCCCB;
+}
+
+input[type=checkbox] {
+  display: block;
+}
+
+input[type=radio] {
+  display: block;
+}
+
+.custom-radio {
+  
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+@media (max-width: 650px) {
+  .custom-radio {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}
+
+.custom-radio input {
+  opacity: 0;
+}
+
+label[for=favorite] {
+  position: absolute;
+  left: 15%;
+}
+
+.fave-genre input{
+    
+   margin:0 auto;
+   padding:0;
+   -webkit-appearance:none;
+   -moz-appearance:none;
+    appearance:none;
+}
+
+
+.radio-btn {
+  margin-top: 1rem;
+  height: 11.25rem;
+  width: 11.75rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 3px solid transparent;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+
+  text-align: center;
+ 
+  box-shadow: 0 0 20px #c3c3c367;
+  cursor: pointer;
+  -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+     transition: all 100ms ease-in;
+  -webkit-filter: brightness(1) grayscale(1) opacity(1);
+       -moz-filter: brightness(1) grayscale(1) opacity(1);
+            filter: brightness(1) grayscale(1) opacity(1);
+      }
+
+@media (max-width: 650px) {
+  .radio-btn {
+    width: 140px;
+    height: 100px;
+  }
+}
+
+
+.radio-btn:hover{
+    -webkit-filter: brightness(0.8) grayscale(0) opacity(1);
+       -moz-filter: brightness(0.8) grayscale(0) opacity(1);
+            filter: brightness(0.8) grayscale(0) opacity(1);
+  border: 3px solid white;
+}
+
+.fav-genre input:checked + .radio-btn {
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+  border: 3px solid white;
+  box-shadow: 0 0 20px #c3c3c367;
+  }
+
+.radio-btn p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .radio-btn p {
+    font-size: 2rem;
+  }
+}
+
+
+
+.pop {
+  background-image: url("images/microphone.png");
+}
+
+.rock {
+  background-image: url("images/guitar.png");
+}
+
+.jazz {
+  background-image: url("images/saxophone.png");
+}
+
+.electronic {
+  background-image: url("images/turntable.png");
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 15px;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+   
+}
+
+.label-text {
+  display: inline-block;
+  width: 200px;
+  word-break: break-all; 
+}
+
+label[for=instrumet] {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+textarea {
+  margin: 1rem auto;
+  border: 0.1rem solid #CDCCCB;
+  border-radius:0.25rem;
+  width: 100%;
+  min-height: 5rem;
+}
+
+
+
+.submit-btn {
+  display: block;
+  border-radius: 0.25rem;
+  margin: 0 auto 0.5rem auto;
+  width: 7.8rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  border: solid #DFDFDF;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.submit-btn:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+
+
+.credits {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+a {
+  color: #51303C;
+  font-size: 0.9rem;
+}
+
+a:hover {
+  color: #A15F79;
+}
+
+footer, footer a {
+  font-size: 0.5rem;
+}
+@media (max-width: 650px) {
+  .credits {
+    font-size: 0.5rem;
+  }
+  a {
+    font-size: 0.5rem;
+  }
+}

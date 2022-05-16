@@ -1,0 +1,464 @@
+:root {
+    
+    --light: #F0ECE3;
+    --medium: #DFD3C3;
+    --tan: #AD968D;
+    --purple: #A68DAD;
+  }
+
+html {
+  font-size: 55%;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--light);
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+h2 {
+    border-bottom: dotted var(--tan);
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+  }
+
+h3{
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+}
+
+p{
+  font-size: 1.7rem;
+  font-family: 'Roboto Serif', sans-serif;
+}
+
+nav{
+  background-color: var(--tan);
+  color: white;
+}
+
+.navbar-brand {
+  display: flex;
+  gap: 1rem;  
+}
+
+nav h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: white;
+  display: inline;
+  height: 100%;
+
+}
+
+.navbar-brand img {
+  max-width: 100%;
+  width: 6rem;
+}
+
+
+nav ul{
+    display: flex; 
+    height: 100%;
+    font-family: 'Playfair Display', serif;
+    justify-content: space-between;
+    row-gap: 1rem;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+nav a {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+  text-decoration: none;
+
+}
+
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: white;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+nav a:hover::after,
+nav a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+
+}
+
+.nav-link {
+  overflow: hidden;
+  font-size: 1.9rem;
+  color: white;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.nav-link::after {
+  opacity 1;
+  transform: translate3d(-100%, 0, 0);
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after{
+  transform: translate3d(0, 0, 0);
+
+}
+
+.fa-bars{
+  color: white;
+  font-size: 3rem;
+  padding: 0;
+}
+
+.product {
+  margin: 3rem auto 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.description {
+  text-align: center;
+  margin-top: 3rem;
+  color: #3E3541;
+}
+
+.buy {
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: dotted var(--tan);
+  padding: 2rem;
+
+}
+
+.price {
+  font-size: 2rem;
+  
+  font-weight: bold;
+  text-align: center;
+}
+
+/* From cssbuttons.io by @alexmaracinaru */
+.cta {
+ border: none;
+ background: none;
+}
+
+.cta span {
+
+ letter-spacing: 2px;
+ font-size: 1.5rem;
+ padding-right: 15px;
+ text-transform: uppercase;
+ font-family: 'Playfair Display', serif;
+ font-weight: bold;
+}
+
+.cta svg {
+ transform: translateX(-8px);
+ transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+ transform: translateX(0);
+}
+
+.cta:active svg {
+ transform: scale(0.9);
+}
+
+.hover-underline-animation {
+ position: relative;
+ color: black;
+ padding-bottom: 10px;
+}
+
+.hover-underline-animation:after {
+ content: "";
+ position: absolute;
+ width: 100%;
+ transform: scaleX(0);
+ height: 1.5px;
+ bottom: 0;
+ left: 0;
+ background-color: #000000;
+ transform-origin: bottom right;
+ transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+ transform: scaleX(1);
+ transform-origin: bottom left;
+}
+
+#Review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+
+  background: rgb(166,141,173);
+  background: radial-gradient(circle, rgba(166,141,173,1) 1%, rgba(240,236,227,1) 29%);
+  }
+  
+.quote {
+  font-size: 1.8rem;
+  font-style: italic;
+  margin: 3rem 0;
+  text-align: center;
+  color: black;
+  width: 65%;
+  
+}
+
+#leaf1 {
+  width: 17.5%;
+  height: 17.5%;
+  align-self: center;
+}
+
+#leaf2 {
+  width: 17.5%;
+  height: 17.5%;
+  transform: scaleX(-1);
+  align-self: center;
+  z-index:1;
+}
+
+#How {
+    margin-bottom: 4rem;
+    width: 60%
+    margin: 0 auto;
+  }
+
+ 
+ #subtitle {
+  margin: 0  auto 2rem auto;
+  width: 70%;
+  text-align: center;
+ }
+  
+
+#Newsletter {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto 4rem auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#Newsletter h2 {
+  margin-bottom: 2rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; 
+}
+
+  input[type=email] {
+    margin-right: 3rem;
+    border-bottom: 0.3rem solid var(--purple);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  ::placeholder {
+    font-family: 'Roboto Serif', sans-serif;
+  }
+
+
+.btn {
+  background: linear-gradient(to top left , #DFD3C3, #AD968D);
+  width: 100px;
+  border: 0;
+  color: #3E3541;
+  font-family: 'Roboto Serif', sans-serif;
+  font-size: 1.8rem;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 8px 10px 5px -4px rgba(217,217,217,0.75);
+  -webkit-box-shadow: 8px 10px 5px -4px rgba(217,217,217,0.75);
+  -moz-box-shadow: 8px 10px 5px -4px rgba(217,217,217,0.75);
+  align-self: center;
+}
+
+.btn:hover, .btn:active {
+  color: #fff;
+}
+
+footer{
+  display: fixed;
+  bottom: 0;
+  margin-top: 8rem;
+  padding: 1rem;
+  background: rgb(173,150,141);
+  background: radial-gradient(circle, rgba(173,150,141,1) 1%, rgba(223,211,195,1) 34%);
+  color: #3E3541;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-family: "Roboto Serif", sans-serif; 
+  gap: 0.6rem;
+  margin: 0;
+}
+
+
+footer a {
+  color: #7D6A82;
+  text-decoration: none;
+}
+
+footer a:hover, 
+footer a:active {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer .row {
+  display: flex;
+}
+
+#credits {
+  width: 33%;
+}
+
+#contact {
+  text-align: center;
+  width: 33%;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  gap: 1.2rem;
+  text-align: center;
+  align-items: center;
+ 
+}
+
+.contact-links i {
+  font-size: 1rem;
+}
+
+#copyright {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 33%;
+}
+
+#copyright ul {
+  align-items: flex-end;
+  justify-content: stretch; 
+  column-gap: 0.9rem;
+  padding-bottom: 1.8rem;
+}
+
+#copyright span {
+  font-family: "Roboto Serif", sans-serif;
+  font-size: 1rem;
+
+}
+
+@media (min-width: 700px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .navbar-brand {
+    width: 30%;
+  }
+
+  .description {
+    background: url("../../PRODUCT LANDING PAGE/IMAGES/logo-three.png") no-repeat 105% -5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+  }
+
+  .note{
+    font-weight: bold;
+  }
+
+  .price {
+    font-size: 2.5rem;
+
+  }
+
+  .cta span {
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+  }
+
+  #Review {
+    width: 80%;
+    margin: 6rem auto;
+  }
+  .quote {
+    font-size: 3rem;
+  }
+
+  #subtitle {
+    width: 40%;
+  }
+
+  footer p {
+    font-size: 1.4rem;
+  }
+ 
+ footer ul, footer a {
+  font-size: 1.2rem;
+ }
+
+ .contact-links {
+  gap: 0.5rem;
+ }
+
+ #copyright ul {
+  padding-bottom: 1rem;
+ }
+
+ #credits ul {
+  gap: 1rem;
+ }
+}
