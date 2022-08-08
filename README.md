@@ -1,5 +1,5 @@
 # web-development
-This are my web development project.
+This are some of my web development projects, including my earlier work.
 I've been experimenting with Bootstraps, Animations, Image responsiveness
 and a little javascript.
 
